@@ -1,4 +1,5 @@
 require 'omniauth/strategies/oauth2'
+require 'omniauth/zoom_oauth2/api'
 
 module OmniAuth
   module Strategies
@@ -15,8 +16,8 @@ module OmniAuth
 
       info do
         unless @info
-          #api = OmniAuth::ZoomOauth2::API.new(token)
-          #@info = api.get("/users/me")
+          api = OmniAuth::ZoomOauth2::API.new(token)
+          @info = api.get("/users/me")
         end
 
         @info
