@@ -27,7 +27,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-zoom
+    $ gem install omniauth-zoom-oauth2
 
 ## Usage
 
